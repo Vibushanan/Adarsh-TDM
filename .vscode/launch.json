@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch SqoopExample",
+            "request": "launch",
+            "mainClass": "org.vinu.sqoop.SqoopExample",
+            "projectName": "SampleSqoop"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TdmMasterApplication<tdm-master>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "org.tdm.master.tdmmaster.TdmMasterApplication",
+            "projectName": "tdm-master",
+            "args": ""
+        }
+    ]
+}

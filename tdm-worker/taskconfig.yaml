@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: task
+  labels:
+    name: task
+spec:
+  containers:
+  - name: task
+    image: vibushanan/tdm-worker
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    volumeMounts:
+      - mountPath: /opt/
+        name: configuration
+  volumes:
+    - name:  configuration
+      configMap:
+        name: customer-task  
+    
+    

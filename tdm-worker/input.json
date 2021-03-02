@@ -1,0 +1,131 @@
+{
+    "tablepattern": {
+      "customers": {
+        "CUSTOMER_TYPE": {
+          "gold": 127,
+          "classic": 886,
+          "junior": 237
+        },
+        "GENDER": {
+          "Female": 498,
+          "Male": 752
+        }
+      }
+    },
+    "scheduler": {
+      "module": "immediate",
+      "jobname": "aaaaaaaaaaaa"
+    },
+    "jobinformation": {
+      "sourceid": "81055f70-3b56-11e9-8817-ede35c2c07a7",
+      "sessionid": "af7ba900-7271-11eb-a2e4-7f5a8a7888fa",
+      "userid": "admin"
+    },
+    "recordcount": {
+      "isFullTable": true,
+      "noOFRecords": ""
+    },
+    "pkPatterns": {},
+    "fkPatterns": {},
+    "relatedpatterns": {},
+    "categoricalPatterns": {
+      "customers": {
+        "data": [
+          {
+            "$level": 1,
+            "chapter": "GENDER",
+            "$parent": 0,
+            "count": 498,
+            "id": 1613674013320,
+            "key": "Female",
+            "$count": 3
+          },
+          {
+            "$level": 1,
+            "chapter": "GENDER",
+            "$parent": 0,
+            "count": 752,
+            "id": 1613674013324,
+            "key": "Male",
+            "$count": 3
+          }
+        ]
+      }
+    },
+    "type": "table",
+    "obfuscation": {
+      "customers": [
+        {
+          "OBFUSCATION": "ENCRYPT",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "CUST_ID"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE FROM SOURCE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "FIRST_NAME"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE FROM SOURCE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "LAST_NAME"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE FROM SOURCE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "EMAIL_ID"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE FROM SOURCE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "GENDER"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE FROM SOURCE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "STREET"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE FROM SOURCE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "CITY"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE FROM SOURCE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "STATE"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE FROM SOURCE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "ZIP"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE FROM SOURCE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "CUSTOMER_TYPE"
+        },
+        {
+          "OBFUSCATION": "RANDOMIZE",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "BIRTH_DATE"
+        },
+        {
+          "OBFUSCATION": "ENCRYPT",
+          "ADDITIONAL INFO": {},
+          "COLUMN NAME": "SSN_NUMBER"
+        }
+      ]
+    },
+    "target": {
+      "targetid": "980484d0-3b56-11e9-8817-ede35c2c07a7",
+      "targetOptions": {
+        "customers": {
+          "addInfo": {
+            "tableName": "CustTest"
+          },
+          "option": "Create new table"
+        }
+      }
+    }
+  }
